@@ -1,0 +1,29 @@
+{
+  "name": "scrapenews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yusrob43/scrapeNews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yusrob43/scrapeNews/issues"
+  },
+  "homepage": "https://github.com/yusrob43/scrapeNews#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.10.4",
+    "path": "^0.12.7",
+    "request": "^2.81.0"
+  }
+}
