@@ -24,7 +24,12 @@ var cheerio = require('cheerio');
 var mongoose = require('mongoose');
 var ObjectId = require('mongojs').ObjectID;
 
-mongoose.connect('mongodb://localhost/scraper');
+if (process.env.MONGODB_URI){
+  mongoose.connect(process.env.MONGODB_URI);
+} else{    
+  mongoose.connect('mongodb://localhost/scraper');
+}
+
 var db = mongoose.connection;
 
 db.on('error', function(err) {
